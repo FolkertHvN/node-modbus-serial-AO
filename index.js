@@ -867,7 +867,7 @@ class ModbusRTU extends EventEmitter {
             return;
         }
 
-        const code = 6;
+        const code = 66;
 
         let valueSize = 8;
         if (this._enron && !(dataAddress >= this._enronTables.shortRange[0] && dataAddress <= this._enronTables.shortRange[1])) {
