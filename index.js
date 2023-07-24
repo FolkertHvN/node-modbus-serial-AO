@@ -867,6 +867,7 @@ class ModbusRTU extends EventEmitter {
             return;
         }
 
+        // FC=6 changed to FC=66 to support Sofar Write
         const code = 66;
 
         let valueSize = 8;
